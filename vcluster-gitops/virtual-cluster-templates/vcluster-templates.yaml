@@ -32,7 +32,7 @@ spec:
         metadata:
           annotations:
             sleepmode.loft.sh/ignore-user-agents: argo*
-          abels:
+          labels:
              loft.sh/import-argocd: 'true'
         instanceTemplate:
           metadata:
@@ -150,7 +150,8 @@ spec:
             - prod
           defaultValue: dev
           section: Deployment Environment
-    - template:
+    - version: 1.0.0
+      template:
         metadata:
           annotations:
             sleepmode.loft.sh/ignore-user-agents: argo*
@@ -270,7 +271,6 @@ spec:
             - prod
           defaultValue: dev
           section: Deployment Environment
-      version: 1.0.0
     - template:
         metadata: {}
         instanceTemplate:
