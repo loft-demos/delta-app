@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Install vCluster CLI
         uses: loft-sh/setup-vcluster@main
+      - name: Show vCluster Version
+        run: vcluster --version
       - name: Login to vCluster Platform instance
         env:
           VCLUSTER_PLATFORM_URL: ${{ secrets.VCLUSTER_PLATFORM_URL }}
