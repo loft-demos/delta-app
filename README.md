@@ -2,7 +2,7 @@
 This repository template is used to create vCluster Platform environments via GitOps and provides demo use cases as code. The repository includes a `vcluster-gitops` directory that serves as an example of managing the vCluster Platform with GitOps using Argo CD.
 
 ## vCluster Platform Integration Examples
-
+### External Secrets Operator
 ### Argo CD
 
 vCluster.Pro includes an Argo CD integration that will automatically add a vCluster instance, created with a [virtual cluster template](https://www.vcluster.com/pro/docs/virtual-clusters/templates), to Argo CD as a target cluster of an Argo CD `Application` `destination`. 
